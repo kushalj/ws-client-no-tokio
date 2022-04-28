@@ -39,7 +39,7 @@ fn log_message(msg: &Message) {
     // println!("TICKER RECEIVED, Best Ask: {:?}", ticker.ask);
     println!(
         "TICKER RECEIVED, Best Ask: {}",
-        serde_json::to_string_pretty(&ticker).unwrap()
+        serde_json::to_string_pretty(&ticker.ask).unwrap()
     );
 }
 
